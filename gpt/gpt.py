@@ -1,3 +1,4 @@
+import torch
 import torch.nn as nn
 from gpt.transformer import TransformerBlock
 from gpt.layer_normalization import LayerNorm

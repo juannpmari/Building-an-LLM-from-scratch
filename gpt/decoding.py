@@ -1,6 +1,7 @@
 import torch
 
 def generate_text_simple(model, idx, max_new_tokens, context_size): #A
+    """Decoding by max probability (greedy decoding)"""
     for _ in range(max_new_tokens):
         idx_cond = idx[:, -context_size:] #B
         with torch.no_grad():
